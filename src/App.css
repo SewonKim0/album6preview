@@ -1,4 +1,7 @@
+/* General: Default layout */
 * {
   margin: 0em;
   padding: 0em;
+  box-sizing: border-box;
 }
+/* General: Main Containers */
