@@ -21,6 +21,7 @@ function App() {
         playing={playing} 
         setRangePos={setRangePos}
         inputPos={inputPos}
+        setPlaying={setPlaying}
       />
 
       <Footer 
