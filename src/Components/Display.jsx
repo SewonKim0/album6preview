@@ -1,4 +1,4 @@
-import MainVideo from "./../winter-snow.mp4";
+import MainVideo from "./../winter-snow-optimized.mp4";
 import { useEffect, useRef } from "react";
 
 function Display(props) {
