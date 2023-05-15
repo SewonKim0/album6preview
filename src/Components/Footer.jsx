@@ -17,7 +17,7 @@ function Footer(props) {
         {/* Controls Container */}
         <div id="controls-container">
             {/* Album 5 */}
-            <a href="https://www.youtube.com/watch?v=j29N75wq6hM&list=PLK8AjScya4-uJSXUlQTUrLZeGUgXQM4SD">
+            <a href="https://www.youtube.com/watch?v=3FUCWGE8GGU&list=PLK8AjScya4-uJSXUlQTUrLZeGUgXQM4SD&index=3">
                 <button>
                     Album 5
                 </button>

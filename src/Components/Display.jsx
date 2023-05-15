@@ -46,7 +46,16 @@ function Display(props) {
             onEnded={() => {
                 //update playing
                 setPlaying(false);
+            }}
+            
+            //Video Clicked: Toggle Playing
+            onClick={() => {
+                //toggle playing
+                setPlaying((playing) => {
+                    return !playing;
+                })
             }}>
+
             <source src={MainVideo} type="video/mp4" />
             Error: Cannot load video.
         </video>

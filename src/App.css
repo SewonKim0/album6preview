@@ -198,3 +198,42 @@ div#controls-container > a > #back {
 div#footer > input {
   width: 30%;
 }
+
+/* Media Query: Desktop Layout */
+@media (min-width: 600px) {
+  /* Header: Decrease Horizontal Width */
+  div#header {
+    width: 70%;
+  }
+
+  /* Video Dimensions */
+  div#display {
+    background-color: var(--color2);
+    border-radius: 1em;
+    width: 70%;
+
+    margin-top: 1em;
+  }
+  div#display > video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Album Image */
+  div#image-container {
+    width: 20%;
+    max-height: 4em;
+    overflow: hidden;
+
+    margin-right: 10%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Footer: Squeeze controls to middle */
+  div#controls-container {
+    width: 70%;
+  }
+}
