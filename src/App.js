@@ -5,8 +5,13 @@ import './App.css';
 import { useState } from "react";
 
 function App() {
+  //whether video is playing (true) or paused (false)
   let [playing, setPlaying] = useState(false);
-  let [position, setPosition] = useState(0);
+  //position of <input type=range> horizontal slider (0-100)
+  //when playing, rangePos is constantly updated to video's current time
+  let [rangePos, setRangePos] = useState(0);
+  //updated on user input, changes both rangePos and video time
+  let [inputPos, setInputPos] = useState(0);
 
   return (
     <div id="app">
@@ -14,12 +19,14 @@ function App() {
 
       <Display 
         playing={playing} 
-        position={position} 
+        setRangePos={setRangePos}
+        inputPos={inputPos}
       />
 
       <Footer 
         setPlaying={setPlaying} 
-        setPosition={setPosition} 
+        rangePos={rangePos}
+        setInputPos={setInputPos}
       />
     </div>
   );

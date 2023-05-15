@@ -2,7 +2,7 @@ import { BiCaretRightCircle, BiCaretLeft, BiCaretRight, BiAdjust, BiArrowBack } 
 
 function Footer(props) {
     //props
-    let {setPlaying, setPosition} = props !== undefined ? props : {undefined, undefined};
+    let {setPlaying, rangePos, setInputPos} = props !== undefined ? props : {undefined, undefined, undefined};
 
     return <div id="footer">
         {/* Controls Container */}
@@ -40,9 +40,11 @@ function Footer(props) {
             </div>
 
             {/* Back */}
-            <BiArrowBack
-                id="option"
-            />
+            <a href="https://sewonkim0.github.io/SewonKim/">
+                <BiArrowBack
+                    id="back"
+                />
+            </a>
         </div>
 
         {/* Input */}
@@ -51,11 +53,7 @@ function Footer(props) {
             defaultValue="0"
             onChange={(event) => {
                 //if undef, stop
-                if (setPosition === undefined) {
-                    return;
-                }
-                //update position
-                setPosition(event.target.value);
+                //update inputPos
             }}
         ></input>
     </div>

@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 
 function Display(props) {
     //props
-    let {playing, position} = props !== undefined ? props : {undefined, undefined};
+    let {playing, setRangePos, inputPos} = props !== undefined ? props : {undefined, undefined, undefined};
     //refs
     let videoRef = useRef();
 

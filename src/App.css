@@ -144,10 +144,23 @@ div#controls-container > #dark-light {
   width: 2em;
   height: 2em;
 }
-/* Footer: Option Button */
-div#controls-container > #option {
+
+/* Footer: Back Button Container */
+div#controls-container > a {
   width: 2em;
   height: 2em;
+  color: white;
+}
+div#controls-container > a:hover {
+  color: lightblue;
+}
+div#controls-container > a:active {
+  color: white;
+}
+/* Footer: Back Button */
+div#controls-container > a > #back {
+  width: 100%;
+  height: 100%;
 }
 
 /* Footer: Input */
