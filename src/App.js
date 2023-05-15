@@ -1,12 +1,13 @@
+import Header from "./Components/Header";
+import Display from "./Components/Display";
+import Footer from "./Components/Footer";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <video controls width="80%" height="auto">
-        <source src="winter-snow.mp4" type="video/mp4" />
-        Error: Cannot load video.
-      </video>
+    <div id="app">
+      <Header />
+      <Display />
     </div>
   );
 }

@@ -1,7 +1,90 @@
+/* Variables */
+:root {
+  --color1: #000000;
+  --color2: #232323;
+  --color3: #666666;
+}
+/* Fonts */
+@font-face {
+  font-family: inter;
+  src: url("./../public/Inter-ExtraLight.ttf");
+}
+
 /* General: Default layout */
 * {
   margin: 0em;
   padding: 0em;
-  box-sizing: border-box;
 }
 /* General: Main Containers */
+body {
+  background-color: var(--color1);
+  color: white;
+  font-family: inter, sans-serif;
+}
+
+/* App */
+div#app {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+div#header {
+  background-color: var(--color2);
+  width: 90%;
+  border-radius: 1em;
+
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Header: Title Container */
+div#title-container {
+  width: 70%;
+  
+  padding: 1em;
+}
+/* Header: Title */
+/* Header: Subtitle */
+div#title-container > p {
+  margin-top: 0.5em;
+}
+/* Header: Image Container */
+div#image-container {
+  width: 25%;
+  max-height: 4em;
+  overflow: hidden;
+
+  margin-right: 1em;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Header: Image */
+
+/* Display */
+div#display {
+  background-color: var(--color2);
+  border-radius: 1em;
+  width: 90%;
+
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Display: Video */
+div#display > video {
+  width: 90%;
+  height: auto;
+
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
