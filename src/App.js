@@ -4,6 +4,9 @@ import Footer from "./Components/Footer";
 import './App.css';
 import { useState } from "react";
 
+//Mobile Video
+//video initial display
+
 function App() {
   //whether video is playing (true) or paused (false)
   let [playing, setPlaying] = useState(false);
