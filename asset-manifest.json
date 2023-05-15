@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/album6preview/static/css/main.b79a8e34.css",
+    "main.js": "/album6preview/static/js/main.a3d7cbfd.js",
+    "static/js/787.b5e4767f.chunk.js": "/album6preview/static/js/787.b5e4767f.chunk.js",
+    "static/media/winter-snow-optimized.mp4": "/album6preview/static/media/winter-snow-optimized.46f1324662adf8613e4a.mp4",
+    "static/media/album6-1.jpg": "/album6preview/static/media/album6-1.d4be7584a80de5c08d72.jpg",
+    "static/media/Inter-ExtraLight.ttf": "/album6preview/static/media/Inter-ExtraLight.505cb3db0e7c094a9e11.ttf",
+    "index.html": "/album6preview/index.html",
+    "main.b79a8e34.css.map": "/album6preview/static/css/main.b79a8e34.css.map",
+    "main.a3d7cbfd.js.map": "/album6preview/static/js/main.a3d7cbfd.js.map",
+    "787.b5e4767f.chunk.js.map": "/album6preview/static/js/787.b5e4767f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b79a8e34.css",
+    "static/js/main.a3d7cbfd.js"
+  ]
+}
