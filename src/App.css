@@ -17,7 +17,7 @@
 }
 /* General: Main Containers */
 body {
-  background-color: var(--color1);
+  background-color: #141414;
   color: white;
   font-family: inter, sans-serif;
 }
@@ -54,6 +54,7 @@ div#title-container {
 div#title-container > p {
   margin-top: 0.5em;
 }
+
 /* Header: Image Container */
 div#image-container {
   width: 25%;
@@ -87,4 +88,69 @@ div#display > video {
 
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+/* Footer */
+div#footer {
+  background-color: var(--color1);
+  width: 100%;
+  height: 5em;
+
+  position: sticky;
+  bottom: 0em;
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Footer: Controls Container */
+div#controls-container {
+  width: 90%;
+  height: 3em;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Footer: Controls Container Inner */
+div#controls-container > div {
+  width: 20%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Footer: Play Button */
+div#controls-container > div > #play {
+  width: 3em;
+  height: 3em;
+}
+/* Footer: Left Button */
+div#controls-container > div > #left {
+  width: 2em;
+  height: 2em;
+}
+/* Footer: Right Button */
+div#controls-container > div > #right {
+  width: 2em;
+  height: 2em;
+}
+/* Footer: Dark/Light Button */
+div#controls-container > #dark-light {
+  width: 2em;
+  height: 2em;
+}
+/* Footer: Option Button */
+div#controls-container > #option {
+  width: 2em;
+  height: 2em;
+}
+
+/* Footer: Input */
+div#footer > input {
+  width: 30%;
 }

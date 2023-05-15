@@ -1,8 +1,29 @@
 import MainVideo from "./../winter-snow.mp4";
+import { useEffect, useRef } from "react";
 
-function Display() {
+function Display(props) {
+    //props
+    let {playing, position} = props !== undefined ? props : {undefined, undefined};
+    //refs
+    let videoRef = useRef();
+
+    //useEffect: playing
+    useEffect(() => {
+        //if undef, stop
+        if (playing === undefined) {
+            return;
+        }
+        //update video state
+        if (playing === false) {
+            videoRef.current.pause();
+        } else {
+            videoRef.current.play();
+        }
+    }, [playing]);
+
     return <div id="display">
-        <video controls>
+        <video
+            ref={videoRef}>
             <source src={MainVideo} type="video/mp4" />
             Error: Cannot load video.
         </video>
