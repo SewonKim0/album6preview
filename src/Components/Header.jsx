@@ -4,7 +4,7 @@ function Header() {
     return <div id="header">
         {/* Title Container */}
         <div id="title-container">
-            <h2> Album 2: Winter Snow </h2>
+            <h2> Album 6: Winter Snow </h2>
             <p> By: Sewon Kim </p>
         </div>
 
